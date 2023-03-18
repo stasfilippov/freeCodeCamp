@@ -2,15 +2,15 @@
 
 function testSize(num) {
   if (num < 5) {
-    return Tiny;
+    return ('Tiny');
   } else if (num < 10) {
-    return Small;
+    return ('Small');
   } else if (num < 15) {
-    return Medium;
+    return ('Medium');
   } else if (num < 20) {
-    return Large;
+    return ('Large');
   } else {
-    return Huge;
+    return ('Huge');
   }
 }
 
