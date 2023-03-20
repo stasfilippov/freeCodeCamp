@@ -8,21 +8,28 @@ function cc(card) {
     case 4: 
     case 5: 
     case 6: 
-      return count += 1;
+      count += 1;
+      break;
     case 7: 
     case 8: 
     case 9:
-      return count;
+      count;
+      break;
     case 10:
     case 'J': 
     case 'Q': 
     case 'K': 
     case 'A':
-      return count -=1
+      count -=1;
+      break;
   }
-
-  return "Change Me";
+  if (count > 0) {
+    return `${count} Bet`;
+  } else if (count <= 0) {
+    return `${count} Hold`;
+  }
   // Only change code above this line
 }
 
-cc(2); cc(3); cc(7); cc('K'); cc('A');
+console.log (cc(10)); 
+cc(3); /* cc(7); cc('K'); cc('A'); */
